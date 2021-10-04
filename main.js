@@ -25,7 +25,7 @@ const closeIssue = id => {
     const issues = JSON.parse(localStorage.getItem('issues'));
     console.log(issues)
     const currentIssue = issues.find(issue => issue.id == id);
-    currentIssue.description.style.textDecoration = 'line-through'
+
 
     currentIssue.status = 'Closed';
     localStorage.setItem('issues', JSON.stringify(issues));
